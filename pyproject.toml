@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quirky"
+version = "0.1"
+description = "Generate QR codes using ASCII full block characters"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Gabyface910"}
+]
+keywords = ["qr", "qr-code", "ascii", "terminal"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "qrcode>=6.3",
+]
+
+[project.urls]
+Homepage = "https://github.com/Gabyface910/quirky"
+Documentation = "https://github.com/Gabyface910/quirky#readme"
+Repository = "https://github.com/Gabyface910/quirky.git"
+Issues = "https://github.com/Gabyface910/quirky/issues"
+
+[tool.setuptools]
+packages = ["quirky"]
+
+[tool.setuptools.package-dir]
+"" = "src"
